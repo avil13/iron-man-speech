@@ -5,17 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css?t=2">
+    <link rel="stylesheet" href="./style.css?t=1saa">
+    <link rel="stylesheet" href="./simple-grid.css">
 </head>
 <body>
-    <button id="btn" class="btn"> Go </button>
+<div class="container">
+    <div class="row">
 
-    <script>
+        <div class="col-12">
+            <div class="canvas center">
+                <div class="head-left"></div>
+                <div class="head-right"></div>
+                
+                <div class="eye-left-blink"></div>
+                <div class="eye-left"></div>
+                <div class="eye-left-glow"></div>
+                
+                <div class="eye-right"></div>
+                <div class="eye-right-glow"></div>
+                
+                <div class="mouth"></div>
+                <div class="plate-left"></div>
+                <div class="plate-left-small"></div>
+                <div class="plate-left-smaller"></div>
+                <div class="plate-right"></div>
+                <div class="plate-right-small"></div>
+                <div class="plate-right-smaller"></div>
+                <div class="plate-glow"></div>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="col-12">
+            <button id="btn" class="btn center"> Команда </button>
+        </div>
+            
+        <div class="col-12">
+            <div class="center commands"></div>
+        </div>
+
+
+    </div>
+</div>
+    
+
+<script>
     (() => {
         const script = document.createElement('script');
         script.setAttribute('src', `./index.js?t=${Date.now()}`);
         document.body.appendChild(script);
     })();
-    </script>
+</script>
+
 </body>
 </html>

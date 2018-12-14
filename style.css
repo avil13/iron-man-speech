@@ -11,3 +11,202 @@
 .btn.active {
     background-color: #292;
 }
+
+.center {
+    margin: auto;
+}
+
+.commands {
+    
+}
+
+
+
+/* /// */
+body {
+    min-height: 800px;
+    min-width: 800px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .canvas {
+    width: 500px;
+    height: 500px;
+    background: #6B1513;
+    position: relative;
+    box-shadow: 7px 10px 10px rgba(0,0,0,.25)
+  }
+  
+  .head-left {
+    position: absolute;
+    width: 70px;
+    height: 215px;
+    background: #FBB837;
+    left: 180px;
+    top: 68px;
+    clip-path: polygon(100% 32.5%, 76% 31%, 66% 0%, 38.2% 1.68%, 7.29% 11%, 9.52% 43%, 0% 53.8%, 0% 55.9%, 28.8% 72.6%, 45.2% 85.1%, 45.2% 87.02%, 43.3% 91.02%, 58.2% 100%, 65% 98.7%, 90.1% 98.2%, 94.1% 96.86%, 100% 96.8%);
+  }
+  .head-right {
+    position: absolute;
+    width: 70px;
+    height: 215px;
+    background: #F59800;
+    right: 181px;
+    top: 68px;
+    clip-path: polygon(0% 32.5%, 24% 31%, 34% 0%, 61.8% 1.68%, 92.71% 11%, 90.48% 43%, 100% 53.8%, 100% 55.9%, 71.2% 72.6%, 54.8% 85.1%, 54.8% 87.02%, 56.7% 91.02%, 41.8% 100%, 35% 98.7%, 9.9% 98.2%, 5.9% 96.86%, 0% 96.8%);
+  }
+  /*  * /
+   .eye-left-blink:before {
+       content: " ";
+       transform: rotate(25deg);  
+       background: #fff;
+       width: 25px;
+       height: 10px;
+       position: absolute;
+       left: 200px;
+       top: 180px;
+       animation: blink 5s ease-in infinite;
+       border-radius: 20%;
+   }
+  /*  */
+  .eye-left {
+    width: 44px;
+    height: 31px;
+    background: #C9C9C9;
+    position: absolute;
+    left: 193px;
+    top: 165px;
+    clip-path: polygon(6.34% 0, 34% 27.55%, 100% 65.1%, 90% 100%, 20% 76.5%, 0 36.9%);
+  }
+  .eye-left-glow {
+    width: 44px;
+    height: 31px;
+    background: #fff;
+    position: absolute;
+    left: 193px;
+    top: 165px;
+    clip-path: polygon(6.34% 0, 34% 27.55%, 100% 65.1%, 90% 100%, 20% 76.5%, 0 36.9%);
+    animation: glow 3s ease-in infinite;
+  }
+  
+  
+  .eye-right {
+    width: 44px;
+    height: 31px;
+    background: #C9C9C9;
+    position: absolute;
+    right: 193px;
+    top: 165px;
+    clip-path: polygon(93.66% 0, 66% 27.55%, 0% 65.1%, 10% 100%, 80% 76.5%, 100% 36.9%);
+  }
+  .eye-right-glow {
+    width: 44px;
+    height: 31px;
+    background: #fff;
+    position: absolute;
+    right: 193px;
+    top: 165px;
+    clip-path: polygon(93.66% 0, 66% 27.55%, 0% 65.1%, 10% 100%, 80% 76.5%, 100% 36.9%);
+    animation: glow 3s ease-in infinite;
+  }
+
+  .open-eyes .eye-right-glow, .open-eyes .eye-left-glow {
+    background: rgb(34, 166, 255);
+  }
+  
+  .mouth {
+    width: 76px;
+    height: 18px;
+    background: #6B1513;
+    position: absolute;
+    left: 212px;
+    top: 251px;
+    clip-path: polygon(0 0, 0 25%, 20% 100%, 30% 60%, 70% 58%, 80% 100%, 100% 25%, 100% 0, 80% 75%, 70% 35%, 30% 35%, 20% 75%);
+  }
+  .plate-left {
+    width: 46px;
+    height: 92px;
+    background: #E5EEEB;
+    position: absolute;
+    left: 204px;
+    top: 341px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+  }
+  .plate-left-small {
+    width: 40px;
+    height: 80px;
+    background: #F7F1F8;
+    position: absolute;
+    left: 210px;
+    top: 347px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+  }
+  .plate-left-smaller {
+    width: 38px;
+    height: 76px;
+    background: #C1DEE4;
+    position: absolute;
+    left: 212px;
+    top: 349px;
+    border-top-left-radius: 38px;
+    border-bottom-left-radius: 38px;
+  }
+  
+  .plate-right {
+    width: 46px;
+    height: 92px;
+    background: #C4CDCC;
+    position: absolute;
+    right: 205px;
+    top: 341px;
+    border-top-right-radius: 46px;
+    border-bottom-right-radius: 46px;
+  }
+  
+  .plate-right-small {
+    width: 40px;
+    height: 80px;
+    background: #BEE2EE;
+    position: absolute;
+    right: 211px;
+    top: 347px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+  }
+  
+  .plate-right-smaller {
+    width: 38px;
+    height: 76px;
+    background: #C1DEE4;
+    position: absolute;
+    right: 213px;
+    top: 349px;
+    border-top-right-radius: 38px;
+    border-bottom-right-radius: 38px;
+  }
+  .plate-glow {
+    height: 76px;
+    width: 76px;
+    left: 212px;
+    top: 349px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    animation: glow 3s ease-in infinite;
+  }
+  
+  @keyframes blink {
+      0% { box-shadow: 0 0 20px 20px rgba(255,255,255,0.7); }
+      50% { box-shadow: none; }
+      100% { box-shadow: 0 0 20px 20px rgba(255,255,255,0.7); }
+  }
+  
+  @keyframes glow {
+      0% { opacity: 0 }
+      50% { opacity: 1 }
+      100% { opacity: 0 }
+  }
