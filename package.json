@@ -1,0 +1,24 @@
+{
+  "name": "iron-man-speech",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "gh-pages": "node _publish.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avil13/iron-man-speech.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/avil13/iron-man-speech/issues"
+  },
+  "homepage": "https://github.com/avil13/iron-man-speech#readme",
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
+  }
+}

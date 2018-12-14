@@ -56,6 +56,10 @@ function addGrammar(recognition) {
 }
 
 function findCommand(text) {
+    $select('.finded-command', el => {
+        el.innerHTML = text;
+    })
+
     const command = this.commands.find((v) => {
         return text.indexOf(v) > -1;
     });
@@ -71,14 +75,12 @@ function findCommand(text) {
 function tell(text) {
     const synthesis = window.speechSynthesis;
     const textToSpeech = new SpeechSynthesisUtterance(text);
+    textToSpeech.lang = 'ru-RU';
     synthesis.speak(textToSpeech);
 }
 
 function openMask() {
     tell('Давай представим, как будто маска открывается');
-    // $select([ '.head-left', '.head-right' ], (el) => {
-    //     el.
-    // });
 }
 
 function closeMask() {
@@ -113,3 +115,9 @@ function $select(selectors, callback) {
             }
         });
 }
+
+
+// Список команд на экране
+$select('.commands', (el) => {
+    el.innerHTML = actionsObject.commands.join('\n');
+});

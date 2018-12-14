@@ -1,15 +1,18 @@
+
 .btn {
     width: 200px;
-    margin: 2rem auto;
-    border: 1px solid #444;
-    background-color: aliceblue;
+    border: 2px solid #00d9ff;
+    background-color: #f9f9f9;
     padding: 10px;
-    border-radius: 2px;
+    border-radius: 4px;
     display: block;
+    color: #00d9ff;
+    font-size: 1.2rem;
 }
 
 .btn.active {
-    background-color: #292;
+    color: #fff;
+    background-color: #00d9ff;
 }
 
 .center {
@@ -17,7 +20,15 @@
 }
 
 .commands {
-    
+    white-space: pre;
+    color: #1ddd0b;
+}
+.finded-command {
+    background-color: #323131;
+    color: #1adaff;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
 }
 
 
@@ -38,7 +49,7 @@ body {
     position: relative;
     box-shadow: 7px 10px 10px rgba(0,0,0,.25)
   }
-  
+
   .head-left {
     position: absolute;
     width: 70px;
@@ -60,7 +71,7 @@ body {
   /*  * /
    .eye-left-blink:before {
        content: " ";
-       transform: rotate(25deg);  
+       transform: rotate(25deg);
        background: #fff;
        width: 25px;
        height: 10px;
@@ -90,8 +101,8 @@ body {
     clip-path: polygon(6.34% 0, 34% 27.55%, 100% 65.1%, 90% 100%, 20% 76.5%, 0 36.9%);
     animation: glow 3s ease-in infinite;
   }
-  
-  
+
+
   .eye-right {
     width: 44px;
     height: 31px;
@@ -115,7 +126,7 @@ body {
   .open-eyes .eye-right-glow, .open-eyes .eye-left-glow {
     background: rgb(34, 166, 255);
   }
-  
+
   .mouth {
     width: 76px;
     height: 18px;
@@ -155,7 +166,7 @@ body {
     border-top-left-radius: 38px;
     border-bottom-left-radius: 38px;
   }
-  
+
   .plate-right {
     width: 46px;
     height: 92px;
@@ -166,7 +177,7 @@ body {
     border-top-right-radius: 46px;
     border-bottom-right-radius: 46px;
   }
-  
+
   .plate-right-small {
     width: 40px;
     height: 80px;
@@ -177,7 +188,7 @@ body {
     border-top-right-radius: 40px;
     border-bottom-right-radius: 40px;
   }
-  
+
   .plate-right-smaller {
     width: 38px;
     height: 76px;
@@ -198,13 +209,13 @@ body {
     position: absolute;
     animation: glow 3s ease-in infinite;
   }
-  
+
   @keyframes blink {
       0% { box-shadow: 0 0 20px 20px rgba(255,255,255,0.7); }
       50% { box-shadow: none; }
       100% { box-shadow: 0 0 20px 20px rgba(255,255,255,0.7); }
   }
-  
+
   @keyframes glow {
       0% { opacity: 0 }
       50% { opacity: 1 }
